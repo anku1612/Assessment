@@ -1,0 +1,42 @@
+.menu{
+    width: inherit;
+    background-color: darkgrey;
+    border-color: darkgrey;
+}
+.menuBar{
+    height: 100vh;
+    background-color: lightgrey;
+}
+.menuRight{
+    width: 100%;
+    background-color: darkgrey;
+    border-color: darkgrey;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+.name{
+    text-align: right;
+}
+.createTaskDiv{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.cardTracker{
+    background-color: #728FCE;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+.title{
+    color: white;
+    margin: 10px;
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}

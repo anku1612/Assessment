@@ -1,0 +1,32 @@
+.header{
+    background-color:#AEAEAE;
+    padding:10px;
+    display: flex;
+justify-content: center;
+}
+.avtar{
+
+}
+.loginBody{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    padding:40px;
+    height: 100vh;
+}
+.formInput{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px;
+    margin: 10px 0px;
+}
+.loginBtn{
+    background-color: gray;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    margin: 10px -30px;
+}
+.alignment{
+    text-align: center;
+}
