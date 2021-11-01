@@ -1,19 +1,22 @@
-import React from "react";
-import {BrowserRouter as Router, Route } from "react-router-dom";
+
+import {BrowserRouter as Router, Route,Switch } from "react-router-dom";
 import Login from "./Page/Login"
 import Home from "./Page/Home"
 import Todo from "./Page/Todo"
 import Inpogress from "./Page/Inprogress"
-import TaskTrackerContext from "./Component/taskContext";
+// import TaskTrackerContext from "./Component/taskContext";
 function App() {
   return (
     <Router>
-      <Route path="/login" component={Login} />
-      <Route path="/home" component={Home} />
-      <TaskTrackerContext>
-      <Route path="/todo" component={Todo} />
-      <Route path="/inpogress" component={Inpogress} />
-      </TaskTrackerContext>
+      <Switch>
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/home" component={Home} />
+      {/* <TaskTrackerContext> */}
+      <Route exact path="/todo" component={Todo} />
+      <Route exact path="/inpogress" component={Inpogress} />
+      <Route exact path="/done" component={Inpogress} />
+      {/* </TaskTrackerContext> */}
+     </Switch>
     </Router>
   );
 }
